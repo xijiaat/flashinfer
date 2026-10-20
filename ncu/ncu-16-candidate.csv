@@ -1,0 +1,3 @@
+ID,Kernel Name,Block Size,Grid Size,CC,gpu__time_duration.sum,dram__bytes_read.sum,dram__bytes_write.sum,dram__throughput.avg.pct_of_peak_sustained_elapsed,sm__throughput.avg.pct_of_peak_sustained_elapsed,sm__warps_active.avg.pct_of_peak_sustained_active,launch__registers_per_thread,launch__block_size,launch__grid_size
+,,,,,us,byte,Kbyte,%,%,%,register/thread,,
+0,kernel_cutlass_kernel_flashinfermoe_epbackendsmegakernelsm90fp8_mxfp4_bf16_pull_cutedsl_fusion_candidate_safe_BF16SafeStager_object_at__tensorptrbf16_gmem_o_716871681_tensorptrf8E4M3FN_gm_0,"(256, 1, 1)","(17, 1, 1)",9.0,4.320000,0,16.384000,0.079881,3.394084,11.052601,42,256,17

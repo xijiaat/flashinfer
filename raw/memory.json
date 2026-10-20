@@ -1,0 +1,30 @@
+[
+  {
+    "tokens": 16,
+    "hidden": 7168,
+    "arm": "baseline",
+    "temporary_peak_bytes": 918016,
+    "live_delta_bytes": 0
+  },
+  {
+    "tokens": 16,
+    "hidden": 7168,
+    "arm": "candidate",
+    "temporary_peak_bytes": 0,
+    "live_delta_bytes": 0
+  },
+  {
+    "tokens": 16384,
+    "hidden": 7168,
+    "arm": "baseline",
+    "temporary_peak_bytes": 939589632,
+    "live_delta_bytes": 0
+  },
+  {
+    "tokens": 16384,
+    "hidden": 7168,
+    "arm": "candidate",
+    "temporary_peak_bytes": 0,
+    "live_delta_bytes": 0
+  }
+]

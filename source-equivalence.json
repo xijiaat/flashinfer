@@ -1,0 +1,30 @@
+{
+  "device_kernel_and_math_AST_equal": {
+    "_mul_rn": true,
+    "_div_rn": true,
+    "_safe_scale": true,
+    "_safe_scaled_value": true,
+    "_SafeE4M3Quantize": true,
+    "_compiled_quantizer": true,
+    "quantize_from_amax": true,
+    "_compiled_stager": true,
+    "quantize_and_stage_from_amax": true,
+    "_BF16SafeStager.__init__": true,
+    "_BF16SafeStager.kernel": true,
+    "_compiled_bf16_stager": true,
+    "quantize_and_stage_bf16": true
+  },
+  "launch_wrapper_difference": "Int64 casts on token and capacity dimensions only; same launch geometry on all measured shapes",
+  "staging_difference": "One additional metadata-only 32-bit index range guard; AST otherwise equal to measured staging",
+  "guard": "num_tokens * max(hidden_states.shape[1], topk_ids.shape[1], 4) <= 2 ** 31 - 1",
+  "correctness_shapes_guard_true": 48,
+  "measured_sha256": {
+    "safe_quantize.py": "43826e874ad806810e1e746e9ccb0ecb60cfa24a5ff64ac87b43389b50360e0a",
+    "staging.py": "188a0f0c831a329d7995997e954ad3324ead4f31b39088d48a1f4773e8fc52af"
+  },
+  "final_sha256": {
+    "safe_quantize.py": "55f9e43f6e867e5cc334ad4bb0030c9ca5666fbef3e2851480ef5f6db8382b7f",
+    "staging.py": "f75afa3116d7a6ab65b6006d4b33d89506428eb1e6f592727648efb019c750c9"
+  },
+  "final_commit": "3eb1befcf7e5ca3175c398fdf3a4569693a26bfd"
+}

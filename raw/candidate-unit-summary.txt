@@ -1,0 +1,5 @@
+tests/moe_ep/test_sm90_mxfp4_fused_staging.py::test_safe_staging_reuses_workspace_across_graphs[129-2] PASSED [ 25%]
+tests/moe_ep/test_sm90_mxfp4_fused_staging.py::test_safe_staging_reuses_workspace_across_graphs[4096-4] PASSED [ 50%]
+tests/moe_ep/test_sm90_mxfp4_fused_staging.py::test_safe_staging_reuses_workspace_across_graphs[7168-8] PASSED [ 75%]
+tests/moe_ep/test_sm90_mxfp4_fused_staging.py::test_safe_staging_preserves_strided_workspace_fallback PASSED [100%]
+======================== 4 passed, 2 warnings in 1.97s =========================

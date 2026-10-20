@@ -1,0 +1,164 @@
+{
+  "ncu-16-baseline.csv": [
+    {
+      "ID": "",
+      "gpu__time_duration.sum": "us",
+      "dram__bytes_read.sum": "Kbyte",
+      "dram__bytes_write.sum": "Kbyte",
+      "dram__throughput.avg.pct_of_peak_sustained_elapsed": "%",
+      "sm__throughput.avg.pct_of_peak_sustained_elapsed": "%",
+      "sm__warps_active.avg.pct_of_peak_sustained_active": "%",
+      "launch__registers_per_thread": "register/thread",
+      "launch__grid_size": ""
+    },
+    {
+      "ID": "0",
+      "gpu__time_duration.sum": "3.648000",
+      "dram__bytes_read.sum": "0.000000",
+      "dram__bytes_write.sum": "27.904000",
+      "dram__throughput.avg.pct_of_peak_sustained_elapsed": "0.160532",
+      "sm__throughput.avg.pct_of_peak_sustained_elapsed": "8.468157",
+      "sm__warps_active.avg.pct_of_peak_sustained_active": "17.619638",
+      "launch__registers_per_thread": "30",
+      "launch__grid_size": "224"
+    },
+    {
+      "ID": "1",
+      "gpu__time_duration.sum": "2.048000",
+      "dram__bytes_read.sum": "0.000000",
+      "dram__bytes_write.sum": "9.984000",
+      "dram__throughput.avg.pct_of_peak_sustained_elapsed": "0.102824",
+      "sm__throughput.avg.pct_of_peak_sustained_elapsed": "1.920284",
+      "sm__warps_active.avg.pct_of_peak_sustained_active": "8.476168",
+      "launch__registers_per_thread": "32",
+      "launch__grid_size": "112"
+    },
+    {
+      "ID": "2",
+      "gpu__time_duration.sum": "12.544000",
+      "dram__bytes_read.sum": "0.000000",
+      "dram__bytes_write.sum": "4.608000",
+      "dram__throughput.avg.pct_of_peak_sustained_elapsed": "0.007639",
+      "sm__throughput.avg.pct_of_peak_sustained_elapsed": "0.361530",
+      "sm__warps_active.avg.pct_of_peak_sustained_active": "24.961299",
+      "launch__registers_per_thread": "32",
+      "launch__grid_size": "1"
+    },
+    {
+      "ID": "3",
+      "gpu__time_duration.sum": "2.528000",
+      "dram__bytes_read.sum": "10.240000",
+      "dram__bytes_write.sum": "26.112000",
+      "dram__throughput.avg.pct_of_peak_sustained_elapsed": "0.304155",
+      "sm__throughput.avg.pct_of_peak_sustained_elapsed": "18.087248",
+      "sm__warps_active.avg.pct_of_peak_sustained_active": "50.851980",
+      "launch__registers_per_thread": "22",
+      "launch__grid_size": "448"
+    }
+  ],
+  "ncu-16-candidate.csv": [
+    {
+      "ID": "",
+      "gpu__time_duration.sum": "us",
+      "dram__bytes_read.sum": "byte",
+      "dram__bytes_write.sum": "Kbyte",
+      "dram__throughput.avg.pct_of_peak_sustained_elapsed": "%",
+      "sm__throughput.avg.pct_of_peak_sustained_elapsed": "%",
+      "sm__warps_active.avg.pct_of_peak_sustained_active": "%",
+      "launch__registers_per_thread": "register/thread",
+      "launch__grid_size": ""
+    },
+    {
+      "ID": "0",
+      "gpu__time_duration.sum": "4.320000",
+      "dram__bytes_read.sum": "0",
+      "dram__bytes_write.sum": "16.384000",
+      "dram__throughput.avg.pct_of_peak_sustained_elapsed": "0.079881",
+      "sm__throughput.avg.pct_of_peak_sustained_elapsed": "3.394084",
+      "sm__warps_active.avg.pct_of_peak_sustained_active": "11.052601",
+      "launch__registers_per_thread": "42",
+      "launch__grid_size": "17"
+    }
+  ],
+  "ncu-16384-baseline.csv": [
+    {
+      "ID": "",
+      "gpu__time_duration.sum": "us",
+      "dram__bytes_read.sum": "Mbyte",
+      "dram__bytes_write.sum": "Mbyte",
+      "dram__throughput.avg.pct_of_peak_sustained_elapsed": "%",
+      "sm__throughput.avg.pct_of_peak_sustained_elapsed": "%",
+      "sm__warps_active.avg.pct_of_peak_sustained_active": "%",
+      "launch__registers_per_thread": "register/thread",
+      "launch__grid_size": ""
+    },
+    {
+      "ID": "0",
+      "gpu__time_duration.sum": "514.240000",
+      "dram__bytes_read.sum": "234.921472",
+      "dram__bytes_write.sum": "444.068352",
+      "dram__throughput.avg.pct_of_peak_sustained_elapsed": "27.440620",
+      "sm__throughput.avg.pct_of_peak_sustained_elapsed": "59.804736",
+      "sm__warps_active.avg.pct_of_peak_sustained_active": "93.392814",
+      "launch__registers_per_thread": "30",
+      "launch__grid_size": "229376"
+    },
+    {
+      "ID": "1",
+      "gpu__time_duration.sum": "217.344000",
+      "dram__bytes_read.sum": "469.805312",
+      "dram__bytes_write.sum": "445.283584",
+      "dram__throughput.avg.pct_of_peak_sustained_elapsed": "87.499199",
+      "sm__throughput.avg.pct_of_peak_sustained_elapsed": "10.988186",
+      "sm__warps_active.avg.pct_of_peak_sustained_active": "84.657735",
+      "launch__registers_per_thread": "32",
+      "launch__grid_size": "114688"
+    },
+    {
+      "ID": "2",
+      "gpu__time_duration.sum": "135.584000",
+      "dram__bytes_read.sum": "469.840128",
+      "dram__bytes_write.sum": "1.872128",
+      "dram__throughput.avg.pct_of_peak_sustained_elapsed": "72.320252",
+      "sm__throughput.avg.pct_of_peak_sustained_elapsed": "34.379748",
+      "sm__warps_active.avg.pct_of_peak_sustained_active": "90.656470",
+      "launch__registers_per_thread": "32",
+      "launch__grid_size": "1024"
+    },
+    {
+      "ID": "3",
+      "gpu__time_duration.sum": "646.304000",
+      "dram__bytes_read.sum": "471.035136",
+      "dram__bytes_write.sum": "112.509696",
+      "dram__throughput.avg.pct_of_peak_sustained_elapsed": "18.763455",
+      "sm__throughput.avg.pct_of_peak_sustained_elapsed": "68.059051",
+      "sm__warps_active.avg.pct_of_peak_sustained_active": "77.796250",
+      "launch__registers_per_thread": "22",
+      "launch__grid_size": "458752"
+    }
+  ],
+  "ncu-16384-candidate.csv": [
+    {
+      "ID": "",
+      "gpu__time_duration.sum": "us",
+      "dram__bytes_read.sum": "Mbyte",
+      "dram__bytes_write.sum": "Mbyte",
+      "dram__throughput.avg.pct_of_peak_sustained_elapsed": "%",
+      "sm__throughput.avg.pct_of_peak_sustained_elapsed": "%",
+      "sm__warps_active.avg.pct_of_peak_sustained_active": "%",
+      "launch__registers_per_thread": "register/thread",
+      "launch__grid_size": ""
+    },
+    {
+      "ID": "0",
+      "gpu__time_duration.sum": "196.480000",
+      "dram__bytes_read.sum": "236.112384",
+      "dram__bytes_write.sum": "106.989312",
+      "dram__throughput.avg.pct_of_peak_sustained_elapsed": "36.295917",
+      "sm__throughput.avg.pct_of_peak_sustained_elapsed": "75.380056",
+      "sm__warps_active.avg.pct_of_peak_sustained_active": "51.476117",
+      "launch__registers_per_thread": "42",
+      "launch__grid_size": "16385"
+    }
+  ]
+}

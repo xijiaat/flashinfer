@@ -1,0 +1,2233 @@
+{
+  "status": "PASS",
+  "mode": "check",
+  "cases": [
+    {
+      "tokens": 0,
+      "hidden": 1,
+      "topk": 1,
+      "capacity": 64,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 0,
+      "hidden": 65,
+      "topk": 2,
+      "capacity": 64,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 0,
+      "hidden": 129,
+      "topk": 2,
+      "capacity": 64,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 0,
+      "hidden": 4096,
+      "topk": 4,
+      "capacity": 64,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 0,
+      "hidden": 5120,
+      "topk": 6,
+      "capacity": 64,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 0,
+      "hidden": 7168,
+      "topk": 8,
+      "capacity": 64,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 1,
+      "hidden": 1,
+      "topk": 1,
+      "capacity": 64,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 1,
+      "hidden": 65,
+      "topk": 2,
+      "capacity": 64,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 1,
+      "hidden": 129,
+      "topk": 2,
+      "capacity": 64,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 1,
+      "hidden": 4096,
+      "topk": 4,
+      "capacity": 64,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 1,
+      "hidden": 5120,
+      "topk": 6,
+      "capacity": 64,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 1,
+      "hidden": 7168,
+      "topk": 8,
+      "capacity": 64,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 4,
+      "hidden": 1,
+      "topk": 1,
+      "capacity": 64,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 4,
+      "hidden": 65,
+      "topk": 2,
+      "capacity": 64,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 4,
+      "hidden": 129,
+      "topk": 2,
+      "capacity": 64,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 4,
+      "hidden": 4096,
+      "topk": 4,
+      "capacity": 64,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 4,
+      "hidden": 5120,
+      "topk": 6,
+      "capacity": 64,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 4,
+      "hidden": 7168,
+      "topk": 8,
+      "capacity": 64,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 16,
+      "hidden": 1,
+      "topk": 1,
+      "capacity": 64,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 16,
+      "hidden": 65,
+      "topk": 2,
+      "capacity": 64,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 16,
+      "hidden": 129,
+      "topk": 2,
+      "capacity": 64,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 16,
+      "hidden": 4096,
+      "topk": 4,
+      "capacity": 64,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 16,
+      "hidden": 5120,
+      "topk": 6,
+      "capacity": 64,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 16,
+      "hidden": 7168,
+      "topk": 8,
+      "capacity": 64,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 128,
+      "hidden": 1,
+      "topk": 1,
+      "capacity": 160,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 128,
+      "hidden": 65,
+      "topk": 2,
+      "capacity": 160,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 128,
+      "hidden": 129,
+      "topk": 2,
+      "capacity": 160,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 128,
+      "hidden": 4096,
+      "topk": 4,
+      "capacity": 160,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 128,
+      "hidden": 5120,
+      "topk": 6,
+      "capacity": 160,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 128,
+      "hidden": 7168,
+      "topk": 8,
+      "capacity": 160,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 1024,
+      "hidden": 1,
+      "topk": 1,
+      "capacity": 1056,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 1024,
+      "hidden": 65,
+      "topk": 2,
+      "capacity": 1056,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 1024,
+      "hidden": 129,
+      "topk": 2,
+      "capacity": 1056,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 1024,
+      "hidden": 4096,
+      "topk": 4,
+      "capacity": 1056,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 1024,
+      "hidden": 5120,
+      "topk": 6,
+      "capacity": 1056,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 1024,
+      "hidden": 7168,
+      "topk": 8,
+      "capacity": 1056,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 4096,
+      "hidden": 1,
+      "topk": 1,
+      "capacity": 4128,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 4096,
+      "hidden": 65,
+      "topk": 2,
+      "capacity": 4128,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 4096,
+      "hidden": 129,
+      "topk": 2,
+      "capacity": 4128,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 4096,
+      "hidden": 4096,
+      "topk": 4,
+      "capacity": 4128,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 4096,
+      "hidden": 5120,
+      "topk": 6,
+      "capacity": 4128,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 4096,
+      "hidden": 7168,
+      "topk": 8,
+      "capacity": 4128,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 16384,
+      "hidden": 1,
+      "topk": 1,
+      "capacity": 16416,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 16384,
+      "hidden": 65,
+      "topk": 2,
+      "capacity": 16416,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 16384,
+      "hidden": 129,
+      "topk": 2,
+      "capacity": 16416,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 16384,
+      "hidden": 4096,
+      "topk": 4,
+      "capacity": 16416,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 16384,
+      "hidden": 5120,
+      "topk": 6,
+      "capacity": 16416,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "tokens": 16384,
+      "hidden": 7168,
+      "topk": 8,
+      "capacity": 16416,
+      "checks": [
+        {
+          "pattern": "normal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "zero",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "tiny",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "outlier",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "subnormal",
+          "bitwise_all_buffers": true
+        },
+        {
+          "pattern": "finite_bits",
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_all_buffers": true
+        }
+      ],
+      "status": "PASS"
+    }
+  ],
+  "script_sha": "19f766317ad000951e4adda765798a5920efd8285533159ee782744fc25f7ae6",
+  "candidate_sha": {
+    "staging.py": "188a0f0c831a329d7995997e954ad3324ead4f31b39088d48a1f4773e8fc52af",
+    "safe_quantize.py": "43826e874ad806810e1e746e9ccb0ecb60cfa24a5ff64ac87b43389b50360e0a"
+  },
+  "baseline_sha": {
+    "staging.py": "89897f951dc8b21f0caa13f5bb272b8713ed9310bcd40668229ff98aed35c806",
+    "safe_quantize.py": "d31428d46b523200de5517a2462d41d40682f0a2789298f751fb0218d853d337"
+  },
+  "torch": "2.13.0+cu130",
+  "gpu": "NVIDIA H20-3e",
+  "scope": "Same recipe, same buffers; staging only, not complete MoE or model throughput",
+  "finished_at": 1792473897.6492057
+}

@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-20",
+  "baseline_commit": "bfd3072c362822c58098ddb104d6e22ebba001d3",
+  "gpu": "4 x NVIDIA H20-3e (SM90)",
+  "EP": 4,
+  "torch": "2.13.0+cu130",
+  "cuda": "13.0",
+  "driver": "595.71.05",
+  "cutlass_dsl": "4.7.1",
+  "nvshmem": "3.8.0",
+  "nvshmem4py": "0.4.1",
+  "ncu": "2026.3.1",
+  "sampling": "All original samples retained; no selection by observed gain. NCU was separate from timing.",
+  "privacy": "Host names, IP addresses, UUIDs, PIDs and unrelated environment data are omitted. Numerical samples/counters are unchanged.",
+  "scope": "Synthetic complete MoE layer, not full-model serving or quality evaluation."
+}

@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "code_commit": "3eb1befcf7e5ca3175c398fdf3a4569693a26bfd",
+  "source_sha256": {
+    "flashinfer/moe_ep/backends/mega/kernel/sm90/fp8_mxfp4_bf16_pull_cutedsl/safe_quantize.py": "55f9e43f6e867e5cc334ad4bb0030c9ca5666fbef3e2851480ef5f6db8382b7f",
+    "flashinfer/moe_ep/backends/mega/kernel/sm90/fp8_mxfp4_bf16_pull_cutedsl/staging.py": "f75afa3116d7a6ab65b6006d4b33d89506428eb1e6f592727648efb019c750c9",
+    "tests/moe_ep/test_sm90_mxfp4_fused_staging.py": "a210c3c1e65f5387c79b17ccf9abc4b6ea70005631cd77d3f39e44b62dca0c30"
+  },
+  "official_suite_rank_passes": [
+    33,
+    33,
+    33,
+    33
+  ],
+  "staging_unit_passes": 4,
+  "skip": 0,
+  "fail": 0,
+  "error": 0,
+  "baseline_files_unchanged": 10266,
+  "container_exit": 0,
+  "gpu_processes_remaining": 0,
+  "finished": "2026-10-20T06:04:17.552031598Z"
+}
