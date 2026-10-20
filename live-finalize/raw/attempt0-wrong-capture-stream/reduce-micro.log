@@ -1,0 +1,9 @@
+/usr/local/lib/python3.12/dist-packages/torch/cuda/graphs.py:169: UserWarning: The CUDA Graph is empty. This usually means that the graph was attempted to be captured on wrong device or stream. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:210.)
+  super().capture_end()
+Traceback (most recent call last):
+  File "/test/scripts/probe_reduce.py", line 121, in <module>
+    main()
+  File "/test/scripts/probe_reduce.py", line 111, in main
+    assert torch.equal(y[:m], expected)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

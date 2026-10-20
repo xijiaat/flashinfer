@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "code_commit": "9a913c189fc523834f2b8d7145dd76a249493aa6",
+  "sha256": {
+    "flashinfer/moe_ep/kernel_src/sm90/pull_style_cutedsl_megakernel/shim/hopper_mxfp4.py": "620dba8ffdb236fbcf029f039f28650f30841b27e9708dcec405fa9701ff8cf5",
+    "tests/moe_ep/test_sm90_pull_mxfp4_kernel_vs_reference.py": "718122e5c8b0a3e1ae0f4092ad2df507344c1e62bbf2ba63e5ad7c045861df2f"
+  },
+  "official_rank_passes": [
+    33,
+    33,
+    33,
+    33
+  ],
+  "oracle_passes": 3,
+  "staging_passes": 4,
+  "negative_control": "expected baseline padded-output assertion failure",
+  "baseline_unchanged_files": 10266,
+  "candidate_verified_files": 10266,
+  "gpu_processes_remaining": 0,
+  "finished": "2026-10-20T08:31:31.554491Z"
+}

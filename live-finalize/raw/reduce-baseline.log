@@ -1,0 +1,7 @@
+==WARNING== Note: Running with uncontrolled GPU caches. Profiling results may be inconsistent.
+==WARNING== Note: Running with unmodified GPU clocks. If not controlled otherwise, profiling results may be inconsistent.
+==PROF== Connected to process 101 (/usr/bin/python3.12)
+==PROF== Profiling "kernel_cutlass__reduce_bf16_m..." - 0 (1/1): 0%....50%....100% - 9 passes
+{"M": 16, "round_medians": []}
+==PROF== Disconnected from process 101
+==PROF== Report: /test/raw/reduce-baseline.ncu-repz

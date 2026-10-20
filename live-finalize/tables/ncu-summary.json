@@ -1,0 +1,38 @@
+{
+  "baseline": {
+    "dram__bytes_read.sum": {
+      "value": "1.130496",
+      "unit": "Mbyte"
+    },
+    "dram__bytes_write.sum": {
+      "value": "14.490624",
+      "unit": "Mbyte"
+    },
+    "gpu__time_duration.sum": {
+      "value": "29.760000",
+      "unit": "us"
+    },
+    "launch__grid_size": {
+      "value": "20640",
+      "unit": ""
+    }
+  },
+  "live": {
+    "dram__bytes_read.sum": {
+      "value": "927.744000",
+      "unit": "Kbyte"
+    },
+    "dram__bytes_write.sum": {
+      "value": "0",
+      "unit": "byte"
+    },
+    "gpu__time_duration.sum": {
+      "value": "3.456000",
+      "unit": "us"
+    },
+    "launch__grid_size": {
+      "value": "80",
+      "unit": ""
+    }
+  }
+}

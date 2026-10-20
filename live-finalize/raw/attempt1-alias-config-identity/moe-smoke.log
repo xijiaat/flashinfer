@@ -1,0 +1,184 @@
+./src/modules/transport/ibrc/ibrc.cpp:1952: error status: 7 (NVSHMEMX_ERROR_INTERNAL) ./src/modules/transport/ibrc/ibrc.cpp:1952: error status: 7 (NVSHMEMX_ERROR_INTERNAL) no IB devices found
+no IB devices found
+
+
+./src/modules/transport/ibrc/ibrc.cpp:1952: error status: 7 (NVSHMEMX_ERROR_INTERNAL) no IB devices found
+
+./src/modules/transport/ibrc/ibrc.cpp:1952: error status: 7 (NVSHMEMX_ERROR_INTERNAL) no IB devices found
+
+ninja: Entering directory `/test/jit/.cache/flashinfer/0.7.2/90a/cached_ops/fused_moe_90_h20_prebuilt_d'
+ninja: no work to do.
+ninja: Entering directory `/test/jit/.cache/flashinfer/0.7.2/90a/cached_ops/fused_moe_90_h20_prebuilt_d'
+ninja: no work to do.
+ninja: Entering directory `/test/jit/.cache/flashinfer/0.7.2/90a/cached_ops/fused_moe_90_h20_prebuilt_d'
+ninja: no work to do.
+ninja: Entering directory `/test/jit/.cache/flashinfer/0.7.2/90a/cached_ops/fused_moe_90_h20_prebuilt_d'
+ninja: no work to do.
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/test/scripts/compare_live_moe.py", line 219, in <module>
+[rank0]:     if __name__=='__main__':main()
+[rank0]:                             ^^^^^^
+[rank0]:   File "/test/scripts/compare_live_moe.py", line 126, in main
+[rank0]:     for _ in range(3): call()
+[rank0]:                        ^^^^^^
+[rank0]:   File "/test/scripts/compare_live_moe.py", line 123, in call
+[rank0]:     def call(): return layer.forward(tensors,return_workspace_view=True)
+[rank0]:                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/test/source/flashinfer/moe_ep/modes/mega_layer.py", line 719, in forward
+[rank0]:     return self.compute_staged(output=output)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/test/source/flashinfer/moe_ep/modes/mega_layer.py", line 650, in compute_staged
+[rank0]:     return self._staged_kernel.compute(
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/test/source/flashinfer/moe_ep/backends/mega/kernel/sm90/fp8_mxfp4_bf16_pull_cutedsl/backend.py", line 315, in compute
+[rank0]:     view = launch(
+[rank0]:            ^^^^^^^
+[rank0]:   File "/test/scripts/compare_live_moe.py", line 67, in launch
+[rank0]:     result = module.hopper_mxfp4_mega_moe(*args, **kwargs)
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/test/scripts/hopper_mxfp4_candidate.py", line 1265, in hopper_mxfp4_mega_moe
+[rank0]:     if n > 0 and not symm_buffer._frontend.config.in_kernel_fc2_reduce:
+[rank0]:                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/test/scripts/hopper_mxfp4_candidate.py", line 351, in config
+[rank0]:     raise RuntimeError("MXFP4 frontend lost its format-specific config.")
+[rank0]: RuntimeError: MXFP4 frontend lost its format-specific config.
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/test/scripts/compare_live_moe.py", line 219, in <module>
+[rank3]:     if __name__=='__main__':main()
+[rank3]:                             ^^^^^^
+[rank3]:   File "/test/scripts/compare_live_moe.py", line 126, in main
+[rank3]:     for _ in range(3): call()
+[rank3]:                        ^^^^^^
+[rank3]:   File "/test/scripts/compare_live_moe.py", line 123, in call
+[rank3]:     def call(): return layer.forward(tensors,return_workspace_view=True)
+[rank3]:                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/test/source/flashinfer/moe_ep/modes/mega_layer.py", line 719, in forward
+[rank3]:     return self.compute_staged(output=output)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/test/source/flashinfer/moe_ep/modes/mega_layer.py", line 650, in compute_staged
+[rank3]:     return self._staged_kernel.compute(
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/test/source/flashinfer/moe_ep/backends/mega/kernel/sm90/fp8_mxfp4_bf16_pull_cutedsl/backend.py", line 315, in compute
+[rank3]:     view = launch(
+[rank3]:            ^^^^^^^
+[rank3]:   File "/test/scripts/compare_live_moe.py", line 67, in launch
+[rank3]:     result = module.hopper_mxfp4_mega_moe(*args, **kwargs)
+[rank3]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/test/scripts/hopper_mxfp4_candidate.py", line 1265, in hopper_mxfp4_mega_moe
+[rank3]:     if n > 0 and not symm_buffer._frontend.config.in_kernel_fc2_reduce:
+[rank3]:                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/test/scripts/hopper_mxfp4_candidate.py", line 351, in config
+[rank3]:     raise RuntimeError("MXFP4 frontend lost its format-specific config.")
+[rank3]: RuntimeError: MXFP4 frontend lost its format-specific config.
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/test/scripts/compare_live_moe.py", line 219, in <module>
+[rank1]:     if __name__=='__main__':main()
+[rank1]:                             ^^^^^^
+[rank1]:   File "/test/scripts/compare_live_moe.py", line 126, in main
+[rank1]:     for _ in range(3): call()
+[rank1]:                        ^^^^^^
+[rank1]:   File "/test/scripts/compare_live_moe.py", line 123, in call
+[rank1]:     def call(): return layer.forward(tensors,return_workspace_view=True)
+[rank1]:                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/test/source/flashinfer/moe_ep/modes/mega_layer.py", line 719, in forward
+[rank1]:     return self.compute_staged(output=output)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/test/source/flashinfer/moe_ep/modes/mega_layer.py", line 650, in compute_staged
+[rank1]:     return self._staged_kernel.compute(
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/test/source/flashinfer/moe_ep/backends/mega/kernel/sm90/fp8_mxfp4_bf16_pull_cutedsl/backend.py", line 315, in compute
+[rank1]:     view = launch(
+[rank1]:            ^^^^^^^
+[rank1]:   File "/test/scripts/compare_live_moe.py", line 67, in launch
+[rank1]:     result = module.hopper_mxfp4_mega_moe(*args, **kwargs)
+[rank1]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/test/scripts/hopper_mxfp4_candidate.py", line 1265, in hopper_mxfp4_mega_moe
+[rank1]:     if n > 0 and not symm_buffer._frontend.config.in_kernel_fc2_reduce:
+[rank1]:                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/test/scripts/hopper_mxfp4_candidate.py", line 351, in config
+[rank1]:     raise RuntimeError("MXFP4 frontend lost its format-specific config.")
+[rank1]: RuntimeError: MXFP4 frontend lost its format-specific config.
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/test/scripts/compare_live_moe.py", line 219, in <module>
+[rank2]:     if __name__=='__main__':main()
+[rank2]:                             ^^^^^^
+[rank2]:   File "/test/scripts/compare_live_moe.py", line 126, in main
+[rank2]:     for _ in range(3): call()
+[rank2]:                        ^^^^^^
+[rank2]:   File "/test/scripts/compare_live_moe.py", line 123, in call
+[rank2]:     def call(): return layer.forward(tensors,return_workspace_view=True)
+[rank2]:                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/test/source/flashinfer/moe_ep/modes/mega_layer.py", line 719, in forward
+[rank2]:     return self.compute_staged(output=output)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/test/source/flashinfer/moe_ep/modes/mega_layer.py", line 650, in compute_staged
+[rank2]:     return self._staged_kernel.compute(
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/test/source/flashinfer/moe_ep/backends/mega/kernel/sm90/fp8_mxfp4_bf16_pull_cutedsl/backend.py", line 315, in compute
+[rank2]:     view = launch(
+[rank2]:            ^^^^^^^
+[rank2]:   File "/test/scripts/compare_live_moe.py", line 67, in launch
+[rank2]:     result = module.hopper_mxfp4_mega_moe(*args, **kwargs)
+[rank2]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/test/scripts/hopper_mxfp4_candidate.py", line 1265, in hopper_mxfp4_mega_moe
+[rank2]:     if n > 0 and not symm_buffer._frontend.config.in_kernel_fc2_reduce:
+[rank2]:                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/test/scripts/hopper_mxfp4_candidate.py", line 351, in config
+[rank2]:     raise RuntimeError("MXFP4 frontend lost its format-specific config.")
+[rank2]: RuntimeError: MXFP4 frontend lost its format-specific config.
+W1020 08:06:34.196000 178 torch/distributed/elastic/multiprocessing/api.py:1028] Sending process 186 closing signal SIGTERM
+W1020 08:06:34.197000 178 torch/distributed/elastic/multiprocessing/api.py:1028] Sending process 187 closing signal SIGTERM
+E1020 08:06:34.561000 178 torch/distributed/elastic/multiprocessing/api.py:1002] failed (exitcode: 1) local_rank: 0 (pid: 185) of binary: /opt/block32/.venv/bin/python
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 1032, in <module>
+    main()
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 367, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 1028, in main
+    run(args)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 1019, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 194, in __call__
+    return launch_agent(
+           ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 383, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/test/scripts/compare_live_moe.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-10-20_08:06:34
+  host      : localhost
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 188) 
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2026-10-20_08:06:34
+  host      : localhost
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 186) 
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-10-20_08:06:34
+  host      : localhost
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 187) 
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-10-20_08:06:34
+  host      : localhost
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 185) 
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

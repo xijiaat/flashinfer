@@ -1,0 +1,67 @@
+{
+  "status": "FAIL",
+  "rank": 1,
+  "geometry": "tiny",
+  "hidden": 128,
+  "intermediate": 128,
+  "experts": 16,
+  "topk": 2,
+  "ep": 4,
+  "capacity": 32,
+  "control": false,
+  "timing_protocol": "Unmeasured NCCL GPU gate, then captured external events and five complete MoE calls per graph; rank maximum",
+  "config": {
+    "intermediate_size": 128,
+    "top_k": 2,
+    "kernel_name": "sm90_fp8_mxfp4_bf16_pull_cutedsl",
+    "kind": "fp8_e4m3",
+    "fp8_scale_mode": "mxfp4_hybrid",
+    "fp8_accum_mode": "1xacc",
+    "humming_max_range": 11,
+    "preprocess_expert_chunk_size": 4,
+    "knobs": null,
+    "swap_ab": true,
+    "pingpong": false,
+    "mma_tiler_mnk": [
+      128,
+      32,
+      128
+    ],
+    "cluster_shape_mnk": [
+      1,
+      1,
+      1
+    ],
+    "load_balance_mode": "static",
+    "gate_up_clamp": 4.0,
+    "activation_clamp": null,
+    "fast_math": true,
+    "enable_in_kernel_fc2_reduce": false,
+    "token_back_mode": "epi_warps",
+    "dedup_dispatch": null,
+    "grouped_token_back": false,
+    "combine_format": "bf16",
+    "active_dispatch_warps": null,
+    "fc1_store_offload": null,
+    "fc1_early_done_publish": null,
+    "fold_producer_warps": null,
+    "routing_profile": "block_permutation_v1"
+  },
+  "script_sha": "cbe678d4346b4eb7de4c563572d3345e1678fbd4adceac33e92ef99c0a06742e",
+  "candidate_sha": "754f2b1ef2bb4924276a5a932af0ca0e376cf82a1a64b08a8f755873efd6f516",
+  "baseline_sha": "36febe1fd042c590eb007e7e7730216e334faa020e789ab16fc51d5b86ffbd90",
+  "scope": "complete fused MoE including safe BF16 input quantization, staging, EP dispatch, FC1, SwiGLU, A2 quantization, FC2 and combine; fixed same upstream K128 qualification tactic, not best-autotuned claim",
+  "cases": [
+    {
+      "tokens_per_rank_nominal": 13,
+      "tokens_this_rank": 13,
+      "routing": "uniform",
+      "status": "PREPARING",
+      "checks": []
+    }
+  ],
+  "started": 1792483586.394345,
+  "allocated_after_layer": 210944,
+  "error": "RuntimeError('MXFP4 frontend lost its format-specific config.')",
+  "finished": 1792483593.0399544
+}

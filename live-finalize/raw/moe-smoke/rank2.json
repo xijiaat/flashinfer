@@ -1,0 +1,875 @@
+{
+  "status": "PASS",
+  "rank": 2,
+  "geometry": "tiny",
+  "hidden": 128,
+  "intermediate": 128,
+  "experts": 16,
+  "topk": 2,
+  "ep": 4,
+  "capacity": 32,
+  "control": false,
+  "timing_protocol": "Unmeasured NCCL GPU gate, then captured external events and five complete MoE calls per graph; rank maximum",
+  "config": {
+    "intermediate_size": 128,
+    "top_k": 2,
+    "kernel_name": "sm90_fp8_mxfp4_bf16_pull_cutedsl",
+    "kind": "fp8_e4m3",
+    "fp8_scale_mode": "mxfp4_hybrid",
+    "fp8_accum_mode": "1xacc",
+    "humming_max_range": 11,
+    "preprocess_expert_chunk_size": 4,
+    "knobs": null,
+    "swap_ab": true,
+    "pingpong": false,
+    "mma_tiler_mnk": [
+      128,
+      32,
+      128
+    ],
+    "cluster_shape_mnk": [
+      1,
+      1,
+      1
+    ],
+    "load_balance_mode": "static",
+    "gate_up_clamp": 4.0,
+    "activation_clamp": null,
+    "fast_math": true,
+    "enable_in_kernel_fc2_reduce": false,
+    "token_back_mode": "epi_warps",
+    "dedup_dispatch": null,
+    "grouped_token_back": false,
+    "combine_format": "bf16",
+    "active_dispatch_warps": null,
+    "fc1_store_offload": null,
+    "fc1_early_done_publish": null,
+    "fold_producer_warps": null,
+    "routing_profile": "block_permutation_v1"
+  },
+  "script_sha": "2e73a71cb7b8f54fdd6f22e1fe9db69c1e60aea64584bfaee7015462125ccd91",
+  "candidate_sha": "754f2b1ef2bb4924276a5a932af0ca0e376cf82a1a64b08a8f755873efd6f516",
+  "baseline_sha": "36febe1fd042c590eb007e7e7730216e334faa020e789ab16fc51d5b86ffbd90",
+  "scope": "complete fused MoE including safe BF16 input quantization, staging, EP dispatch, FC1, SwiGLU, A2 quantization, FC2 and combine; fixed same upstream K128 qualification tactic, not best-autotuned claim",
+  "cases": [
+    {
+      "tokens_per_rank_nominal": 13,
+      "tokens_this_rank": 13,
+      "routing": "uniform",
+      "status": "PASS",
+      "checks": [
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_output": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_output": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_output": true
+        }
+      ],
+      "rounds": [
+        {
+          "samples_us": [
+            [
+              28.806400299072266,
+              28.89600098133087,
+              28.85119915008545
+            ],
+            [
+              28.857600688934326,
+              28.947201371192932,
+              28.857600688934326
+            ]
+          ],
+          "all_rank_us": [
+            [
+              [
+                28.806400299072266,
+                28.73600125312805,
+                28.63999903202057,
+                28.58879864215851
+              ],
+              [
+                28.89600098133087,
+                28.806400299072266,
+                28.755199909210205,
+                28.6655992269516
+              ],
+              [
+                28.85119915008545,
+                28.74239981174469,
+                28.703999519348145,
+                28.537601232528687
+              ]
+            ],
+            [
+              [
+                28.857600688934326,
+                28.780800104141235,
+                28.82559895515442,
+                28.65920066833496
+              ],
+              [
+                28.947201371192932,
+                28.87679934501648,
+                28.729599714279175,
+                28.69119942188263
+              ],
+              [
+                28.857600688934326,
+                28.71679961681366,
+                28.703999519348145,
+                28.55679988861084
+              ]
+            ]
+          ],
+          "order": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "median_us": [
+            28.85119915008545,
+            28.857600688934326
+          ]
+        }
+      ],
+      "effective_tactic": {
+        "active_dispatch_warps": 1,
+        "cluster_shape_mnk": [
+          1,
+          1,
+          1
+        ],
+        "combine_format": "bf16",
+        "dedup_dispatch": false,
+        "fc1_early_done_publish": true,
+        "fc1_store_offload": false,
+        "fold_producer_warps": true,
+        "fp8_accum_mode": "1xacc",
+        "group_hint": 78,
+        "grouped_token_back": false,
+        "in_kernel_fc2_reduce": false,
+        "load_balance_mode": "static",
+        "mma_tiler_mnk": [
+          128,
+          32,
+          128
+        ],
+        "num_sched_stages": 2,
+        "pingpong": false,
+        "swap_ab": true,
+        "token_back_mode": "epi_warps",
+        "fc2_tail_n8": false,
+        "fc1_ready_mode": "tile",
+        "tail_split_pairs": false
+      },
+      "weight_storage_ptrs": [
+        140030878154752,
+        140030878224384,
+        140030878220288,
+        140030878257152
+      ]
+    },
+    {
+      "tokens_per_rank_nominal": 1,
+      "tokens_this_rank": 3,
+      "routing": "ragged",
+      "status": "PASS",
+      "checks": [
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_output": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_output": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_output": true
+        }
+      ],
+      "rounds": [
+        {
+          "samples_us": [
+            [
+              27.558401226997375,
+              27.692800760269165,
+              27.718400955200195
+            ],
+            [
+              27.673599123954773,
+              27.884799242019653,
+              27.57759988307953
+            ]
+          ],
+          "all_rank_us": [
+            [
+              [
+                27.558401226997375,
+                27.462399005889893,
+                27.398398518562317,
+                27.276799082756042
+              ],
+              [
+                27.686399221420288,
+                27.692800760269165,
+                27.62880027294159,
+                27.507200837135315
+              ],
+              [
+                27.718400955200195,
+                27.635198831558228,
+                27.5519996881485,
+                27.462399005889893
+              ]
+            ],
+            [
+              [
+                27.673599123954773,
+                27.57759988307953,
+                27.507200837135315,
+                27.39199995994568
+              ],
+              [
+                27.884799242019653,
+                27.833598852157593,
+                27.769601345062256,
+                27.71199941635132
+              ],
+              [
+                27.57759988307953,
+                27.46880054473877,
+                27.372801303863525,
+                27.276799082756042
+              ]
+            ]
+          ],
+          "order": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "median_us": [
+            27.692800760269165,
+            27.673599123954773
+          ]
+        }
+      ],
+      "effective_tactic": {
+        "active_dispatch_warps": 1,
+        "cluster_shape_mnk": [
+          1,
+          1,
+          1
+        ],
+        "combine_format": "bf16",
+        "dedup_dispatch": false,
+        "fc1_early_done_publish": true,
+        "fc1_store_offload": false,
+        "fold_producer_warps": true,
+        "fp8_accum_mode": "1xacc",
+        "group_hint": 78,
+        "grouped_token_back": false,
+        "in_kernel_fc2_reduce": false,
+        "load_balance_mode": "static",
+        "mma_tiler_mnk": [
+          128,
+          32,
+          128
+        ],
+        "num_sched_stages": 2,
+        "pingpong": false,
+        "swap_ab": true,
+        "token_back_mode": "epi_warps",
+        "fc2_tail_n8": false,
+        "fc1_ready_mode": "tile",
+        "tail_split_pairs": false
+      },
+      "weight_storage_ptrs": [
+        140030878154752,
+        140030878224384,
+        140030878220288,
+        140030878257152
+      ]
+    },
+    {
+      "tokens_per_rank_nominal": 4,
+      "tokens_this_rank": 4,
+      "routing": "empty-rank",
+      "status": "PASS",
+      "checks": [
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_output": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_output": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_output": true
+        }
+      ],
+      "rounds": [
+        {
+          "samples_us": [
+            [
+              27.904000878334045,
+              28.2368004322052,
+              27.97439992427826
+            ],
+            [
+              27.878400683403015,
+              27.91680097579956,
+              27.744001150131226
+            ]
+          ],
+          "all_rank_us": [
+            [
+              [
+                27.904000878334045,
+                27.884799242019653,
+                27.81440019607544,
+                27.686399221420288
+              ],
+              [
+                28.2368004322052,
+                28.1792014837265,
+                28.166401386260986,
+                27.94879972934723
+              ],
+              [
+                27.97439992427826,
+                27.9231995344162,
+                27.801600098609924,
+                27.692800760269165
+              ]
+            ],
+            [
+              [
+                27.8656005859375,
+                27.878400683403015,
+                27.827200293540955,
+                27.718400955200195
+              ],
+              [
+                27.91680097579956,
+                27.871999144554138,
+                27.744001150131226,
+                27.667200565338135
+              ],
+              [
+                27.718400955200195,
+                27.744001150131226,
+                27.622398734092712,
+                27.513599395751953
+              ]
+            ]
+          ],
+          "order": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "median_us": [
+            27.97439992427826,
+            27.878400683403015
+          ]
+        }
+      ],
+      "effective_tactic": {
+        "active_dispatch_warps": 1,
+        "cluster_shape_mnk": [
+          1,
+          1,
+          1
+        ],
+        "combine_format": "bf16",
+        "dedup_dispatch": false,
+        "fc1_early_done_publish": true,
+        "fc1_store_offload": false,
+        "fold_producer_warps": true,
+        "fp8_accum_mode": "1xacc",
+        "group_hint": 78,
+        "grouped_token_back": false,
+        "in_kernel_fc2_reduce": false,
+        "load_balance_mode": "static",
+        "mma_tiler_mnk": [
+          128,
+          32,
+          128
+        ],
+        "num_sched_stages": 2,
+        "pingpong": false,
+        "swap_ab": true,
+        "token_back_mode": "epi_warps",
+        "fc2_tail_n8": false,
+        "fc1_ready_mode": "tile",
+        "tail_split_pairs": false
+      },
+      "weight_storage_ptrs": [
+        140030878154752,
+        140030878224384,
+        140030878220288,
+        140030878257152
+      ]
+    },
+    {
+      "tokens_per_rank_nominal": 32,
+      "tokens_this_rank": 32,
+      "routing": "uniform",
+      "status": "PASS",
+      "checks": [
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_output": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_output": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_output": true
+        }
+      ],
+      "rounds": [
+        {
+          "samples_us": [
+            [
+              29.80479896068573,
+              29.721599817276,
+              29.61919903755188
+            ],
+            [
+              29.951998591423035,
+              29.574400186538696,
+              29.900801181793213
+            ]
+          ],
+          "all_rank_us": [
+            [
+              [
+                29.80479896068573,
+                29.74720001220703,
+                29.651200771331787,
+                29.555198550224304
+              ],
+              [
+                29.721599817276,
+                29.574400186538696,
+                29.516801238059998,
+                29.37600016593933
+              ],
+              [
+                29.61919903755188,
+                29.53599989414215,
+                29.452800750732422,
+                29.38239872455597
+              ]
+            ],
+            [
+              [
+                29.951998591423035,
+                29.888001084327698,
+                29.88159954547882,
+                29.734399914741516
+              ],
+              [
+                29.574400186538696,
+                29.497599601745605,
+                29.420799016952515,
+                29.388800263404846
+              ],
+              [
+                29.900801181793213,
+                29.728001356124878,
+                29.676800966262817,
+                29.529601335525513
+              ]
+            ]
+          ],
+          "order": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "median_us": [
+            29.721599817276,
+            29.900801181793213
+          ]
+        }
+      ],
+      "effective_tactic": {
+        "active_dispatch_warps": 1,
+        "cluster_shape_mnk": [
+          1,
+          1,
+          1
+        ],
+        "combine_format": "bf16",
+        "dedup_dispatch": false,
+        "fc1_early_done_publish": true,
+        "fc1_store_offload": false,
+        "fold_producer_warps": true,
+        "fp8_accum_mode": "1xacc",
+        "group_hint": 78,
+        "grouped_token_back": false,
+        "in_kernel_fc2_reduce": false,
+        "load_balance_mode": "static",
+        "mma_tiler_mnk": [
+          128,
+          32,
+          128
+        ],
+        "num_sched_stages": 2,
+        "pingpong": false,
+        "swap_ab": true,
+        "token_back_mode": "epi_warps",
+        "fc2_tail_n8": false,
+        "fc1_ready_mode": "tile",
+        "tail_split_pairs": false
+      },
+      "weight_storage_ptrs": [
+        140030878154752,
+        140030878224384,
+        140030878220288,
+        140030878257152
+      ]
+    },
+    {
+      "tokens_per_rank_nominal": 1,
+      "tokens_this_rank": 1,
+      "routing": "uniform",
+      "status": "PASS",
+      "checks": [
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_output": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_output": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_output": true
+        }
+      ],
+      "rounds": [
+        {
+          "samples_us": [
+            [
+              28.58240008354187,
+              28.595200181007385,
+              28.58879864215851
+            ],
+            [
+              28.49920094013214,
+              28.42879891395569,
+              28.409600257873535
+            ]
+          ],
+          "all_rank_us": [
+            [
+              [
+                28.543999791145325,
+                28.58240008354187,
+                28.575998544692993,
+                28.44800055027008
+              ],
+              [
+                28.595200181007385,
+                28.486400842666626,
+                28.47360074520111,
+                28.42879891395569
+              ],
+              [
+                28.58879864215851,
+                28.45439910888672,
+                28.37119996547699,
+                28.2943993806839
+              ]
+            ],
+            [
+              [
+                28.49920094013214,
+                28.409600257873535,
+                28.403198719024658,
+                28.352001309394836
+              ],
+              [
+                28.42879891395569,
+                28.42240035533905,
+                28.307199478149414,
+                28.21120023727417
+              ],
+              [
+                28.409600257873535,
+                28.224000334739685,
+                28.204798698425293,
+                28.13439965248108
+              ]
+            ]
+          ],
+          "order": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "median_us": [
+            28.58879864215851,
+            28.42879891395569
+          ]
+        }
+      ],
+      "effective_tactic": {
+        "active_dispatch_warps": 1,
+        "cluster_shape_mnk": [
+          1,
+          1,
+          1
+        ],
+        "combine_format": "bf16",
+        "dedup_dispatch": false,
+        "fc1_early_done_publish": true,
+        "fc1_store_offload": false,
+        "fold_producer_warps": true,
+        "fp8_accum_mode": "1xacc",
+        "group_hint": 78,
+        "grouped_token_back": false,
+        "in_kernel_fc2_reduce": false,
+        "load_balance_mode": "static",
+        "mma_tiler_mnk": [
+          128,
+          32,
+          128
+        ],
+        "num_sched_stages": 2,
+        "pingpong": false,
+        "swap_ab": true,
+        "token_back_mode": "epi_warps",
+        "fc2_tail_n8": false,
+        "fc1_ready_mode": "tile",
+        "tail_split_pairs": false
+      },
+      "weight_storage_ptrs": [
+        140030878154752,
+        140030878224384,
+        140030878220288,
+        140030878257152
+      ]
+    },
+    {
+      "tokens_per_rank_nominal": 13,
+      "tokens_this_rank": 13,
+      "routing": "uniform",
+      "status": "PASS",
+      "checks": [
+        {
+          "phase": "original",
+          "replays": 3,
+          "bitwise_output": true
+        },
+        {
+          "phase": "changed",
+          "replays": 3,
+          "bitwise_output": true
+        },
+        {
+          "phase": "restored",
+          "replays": 3,
+          "bitwise_output": true
+        }
+      ],
+      "rounds": [
+        {
+          "samples_us": [
+            [
+              28.652799129486084,
+              28.92799973487854,
+              28.761601448059082
+            ],
+            [
+              29.0367990732193,
+              28.761601448059082,
+              28.81920039653778
+            ]
+          ],
+          "all_rank_us": [
+            [
+              [
+                28.652799129486084,
+                28.49920094013214,
+                28.441599011421204,
+                28.352001309394836
+              ],
+              [
+                28.92799973487854,
+                28.85119915008545,
+                28.79999876022339,
+                28.68480086326599
+              ],
+              [
+                28.761601448059082,
+                28.646400570869446,
+                28.512001037597656,
+                28.45439910888672
+              ]
+            ],
+            [
+              [
+                29.0367990732193,
+                28.87679934501648,
+                28.81920039653778,
+                28.672000765800476
+              ],
+              [
+                28.761601448059082,
+                28.68480086326599,
+                28.569599986076355,
+                28.53119969367981
+              ],
+              [
+                28.81920039653778,
+                28.678399324417114,
+                28.6655992269516,
+                28.5504013299942
+              ]
+            ]
+          ],
+          "order": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "median_us": [
+            28.761601448059082,
+            28.81920039653778
+          ]
+        }
+      ],
+      "effective_tactic": {
+        "active_dispatch_warps": 1,
+        "cluster_shape_mnk": [
+          1,
+          1,
+          1
+        ],
+        "combine_format": "bf16",
+        "dedup_dispatch": false,
+        "fc1_early_done_publish": true,
+        "fc1_store_offload": false,
+        "fold_producer_warps": true,
+        "fp8_accum_mode": "1xacc",
+        "group_hint": 78,
+        "grouped_token_back": false,
+        "in_kernel_fc2_reduce": false,
+        "load_balance_mode": "static",
+        "mma_tiler_mnk": [
+          128,
+          32,
+          128
+        ],
+        "num_sched_stages": 2,
+        "pingpong": false,
+        "swap_ab": true,
+        "token_back_mode": "epi_warps",
+        "fc2_tail_n8": false,
+        "fc1_ready_mode": "tile",
+        "tail_split_pairs": false
+      },
+      "weight_storage_ptrs": [
+        140030878154752,
+        140030878224384,
+        140030878220288,
+        140030878257152
+      ]
+    }
+  ],
+  "started": 1792483664.7221348,
+  "allocated_after_layer": 210944,
+  "memory_allocated_after_case": 366592,
+  "dispatch_calls": [
+    60,
+    54
+  ],
+  "finished": 1792483672.014403,
+  "cleanup_phase": "complete"
+}

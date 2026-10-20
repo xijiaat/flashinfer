@@ -1,0 +1,25 @@
+./src/modules/transport/ibrc/ibrc.cpp:1952: error status: 7 (NVSHMEMX_ERROR_INTERNAL) no IB devices found
+./src/modules/transport/ibrc/ibrc.cpp:1952: error status: 7 (NVSHMEMX_ERROR_INTERNAL) 
+no IB devices found
+
+./src/modules/transport/ibrc/ibrc.cpp:1952: error status: 7 (NVSHMEMX_ERROR_INTERNAL) no IB devices found
+
+./src/modules/transport/ibrc/ibrc.cpp:1952: error status: 7 (NVSHMEMX_ERROR_INTERNAL) no IB devices found
+
+ninja: Entering directory `/test/jit/.cache/flashinfer/0.7.2/90a/cached_ops/fused_moe_90_h20_prebuilt_d'
+ninja: no work to do.
+ninja: Entering directory `/test/jit/.cache/flashinfer/0.7.2/90a/cached_ops/fused_moe_90_h20_prebuilt_d'
+ninja: no work to do.
+ninja: Entering directory `/test/jit/.cache/flashinfer/0.7.2/90a/cached_ops/fused_moe_90_h20_prebuilt_d'
+ninja: no work to do.
+ninja: Entering directory `/test/jit/.cache/flashinfer/0.7.2/90a/cached_ops/fused_moe_90_h20_prebuilt_d'
+ninja: no work to do.
+{"m": 1, "routing": "uniform", "round_medians": [[226.55359506607056, 194.7808027267456], [226.7840027809143, 194.69760060310364], [226.64960622787476, 194.62719559669495]]}
+{"m": 4, "routing": "uniform", "round_medians": [[534.4768047332764, 502.2559881210327], [534.5119953155518, 502.4512052536011], [534.4127893447876, 502.15039253234863]]}
+{"m": 16, "routing": "uniform", "round_medians": [[1310.540771484375, 1279.3247699737549], [1310.7840061187744, 1279.481601715088], [1302.2272109985352, 1270.8288192749023]]}
+{"m": 128, "routing": "uniform", "round_medians": [[1904.5503616333008, 1875.9552001953125], [1904.3392181396484, 1875.4399299621582], [1904.371166229248, 1875.5712509155273]]}
+{"m": 1024, "routing": "uniform", "round_medians": [[4644.617652893066, 4623.142433166504], [4652.52799987793, 4630.7329177856445], [4652.672004699707, 4630.905532836914]]}
+{"m": 4096, "routing": "uniform", "round_medians": [[14794.380950927734, 14797.296142578125], [14797.590637207031, 14799.94888305664], [14793.170928955078, 14797.41439819336]]}
+{"m": 16, "routing": "skew", "round_medians": [[290.20479917526245, 259.3567967414856], [290.16960859298706, 259.64159965515137], [290.48320055007935, 259.42718982696533]]}
+{"m": 4, "routing": "empty-rank", "round_medians": [[457.5711965560913, 451.21920108795166], [458.7360143661499, 452.42881774902344], [458.32958221435547, 451.8911838531494]]}
+{"m": 13, "routing": "ragged", "round_medians": [[1254.6592235565186, 1223.311996459961], [1254.7935962677002, 1223.8080024719238], [1254.860782623291, 1224.2815971374512]]}

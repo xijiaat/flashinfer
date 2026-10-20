@@ -1,0 +1,22 @@
+./src/modules/transport/ibrc/ibrc.cpp:1952: error status: 7 (NVSHMEMX_ERROR_INTERNAL) no IB devices found
+
+./src/modules/transport/ibrc/ibrc.cpp:1952: error status: 7 (NVSHMEMX_ERROR_INTERNAL) no IB devices found
+
+./src/modules/transport/ibrc/ibrc.cpp:1952: error status: 7 (NVSHMEMX_ERROR_INTERNAL) no IB devices found
+./src/modules/transport/ibrc/ibrc.cpp:1952: error status: 7 (NVSHMEMX_ERROR_INTERNAL) 
+no IB devices found
+
+ninja: Entering directory `/test/jit/.cache/flashinfer/0.7.2/90a/cached_ops/fused_moe_90_h20_prebuilt_d'
+ninja: no work to do.
+ninja: Entering directory `/test/jit/.cache/flashinfer/0.7.2/90a/cached_ops/fused_moe_90_h20_prebuilt_d'
+ninja: no work to do.
+ninja: Entering directory `/test/jit/.cache/flashinfer/0.7.2/90a/cached_ops/fused_moe_90_h20_prebuilt_d'
+ninja: no work to do.
+ninja: Entering directory `/test/jit/.cache/flashinfer/0.7.2/90a/cached_ops/fused_moe_90_h20_prebuilt_d'
+ninja: no work to do.
+{"m": 13, "routing": "uniform", "round_medians": [[28.85119915008545, 28.857600688934326]]}
+{"m": 1, "routing": "ragged", "round_medians": [[27.692800760269165, 27.673599123954773]]}
+{"m": 4, "routing": "empty-rank", "round_medians": [[27.97439992427826, 27.878400683403015]]}
+{"m": 32, "routing": "uniform", "round_medians": [[29.721599817276, 29.900801181793213]]}
+{"m": 1, "routing": "uniform", "round_medians": [[28.58879864215851, 28.42879891395569]]}
+{"m": 13, "routing": "uniform", "round_medians": [[28.761601448059082, 28.81920039653778]]}

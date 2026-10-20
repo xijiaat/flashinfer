@@ -1,0 +1,224 @@
+
+################################################################
+### sm90_fp8_mxfp4_bf16_pull_cutedsl mega multirank (Hopper)
+################################################################
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0 -- /opt/block32/.venv/bin/python
+rootdir: /test/candidate-source
+configfile: pytest.ini
+plugins: anyio-4.15.1
+collecting ... ============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0 -- /opt/block32/.venv/bin/python
+rootdir: /test/candidate-source
+configfile: pytest.ini
+plugins: anyio-4.15.1
+collecting ... ============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0 -- /opt/block32/.venv/bin/python
+rootdir: /test/candidate-source
+configfile: pytest.ini
+plugins: anyio-4.15.1
+collecting ... ============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0 -- /opt/block32/.venv/bin/python
+rootdir: /test/candidate-source
+configfile: pytest.ini
+plugins: anyio-4.15.1
+collecting ... collected 33 items
+
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_mega_multirank_raw_oracle_and_workspace_reuse[cross_rank] collected 33 items
+
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_mega_multirank_raw_oracle_and_workspace_reuse[cross_rank] collected 33 items
+
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_mega_multirank_raw_oracle_and_workspace_reuse[cross_rank] collected 33 items
+
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_mega_multirank_raw_oracle_and_workspace_reuse[cross_rank] PASSED [  3%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_mega_multirank_raw_oracle_and_workspace_reuse[sparse_owner] PASSED [  3%]PASSED [  3%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_mega_multirank_raw_oracle_and_workspace_reuse[sparse_owner] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_mega_multirank_raw_oracle_and_workspace_reuse[sparse_owner] PASSED [  3%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_mega_multirank_raw_oracle_and_workspace_reuse[sparse_owner] PASSED [  6%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_mega_multirank_raw_oracle_and_workspace_reuse[zero_source] PASSED [  6%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_mega_multirank_raw_oracle_and_workspace_reuse[zero_source] PASSED [  6%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_mega_multirank_raw_oracle_and_workspace_reuse[zero_source] PASSED [  6%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_mega_multirank_raw_oracle_and_workspace_reuse[zero_source] PASSED [  9%]PASSEDPASSED [  9%] [  9%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_mega_multirank_raw_oracle_and_workspace_reuse[all_masked] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_mega_multirank_raw_oracle_and_workspace_reuse[all_masked] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_mega_multirank_raw_oracle_and_workspace_reuse[all_masked] PASSED [  9%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_mega_multirank_raw_oracle_and_workspace_reuse[all_masked] PASSED [ 12%]PASSED [ 12%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k128-odd-weights-tail] PASSED [ 12%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k128-odd-weights-tail] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k128-odd-weights-tail] PASSED [ 12%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k128-odd-weights-tail] PASSED [ 15%]PASSED [ 15%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k128-pingpong-tail] PASSED [ 15%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k128-pingpong-tail] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k128-pingpong-tail] PASSED [ 15%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k128-pingpong-tail] PASSED [ 18%]PASSED [ 18%]PASSED [ 18%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k128-even-token-tiles] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k128-even-token-tiles] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k128-even-token-tiles] PASSED [ 18%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k128-even-token-tiles] PASSED [ 21%]PASSED [ 21%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k256-odd-weight-tail] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k256-odd-weight-tail] PASSED [ 21%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k256-odd-weight-tail] PASSED [ 21%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k256-odd-weight-tail] PASSED [ 24%]PASSED [ 24%]PASSED [ 24%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k256-tail-after-full-cluster] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k256-tail-after-full-cluster] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k256-tail-after-full-cluster] PASSED [ 24%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k256-tail-after-full-cluster] PASSED [ 27%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k256-even-token-tiles] PASSED [ 27%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k256-even-token-tiles] PASSED [ 27%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k256-even-token-tiles] PASSED [ 27%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k256-even-token-tiles] PASSED [ 30%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k128-empty-rank-tail] PASSED [ 30%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k128-empty-rank-tail] PASSED [ 30%]PASSED [ 30%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k128-empty-rank-tail] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k128-empty-rank-tail] PASSED [ 33%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k256-empty-rank-tail] PASSED [ 33%]PASSED [ 33%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k256-empty-rank-tail] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k256-empty-rank-tail] PASSED [ 33%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k256-empty-rank-tail] PASSED [ 36%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k256-all-empty-reset] PASSED [ 36%]PASSED [ 36%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k256-all-empty-reset] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k256-all-empty-reset] PASSED [ 36%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k256-all-empty-reset] PASSED [ 39%]PASSED [ 39%]PASSED [ 39%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k128-empty-source-tail] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k128-empty-source-tail] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k128-empty-source-tail] PASSED [ 39%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_pairs_independent_oracle[k128-empty-source-tail] PASSED [ 42%]PASSED [ 42%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_candidates_other_shapes[k128-only] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_candidates_other_shapes[k128-only] PASSED [ 42%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_candidates_other_shapes[k128-only] PASSED [ 42%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_candidates_other_shapes[k128-only] PASSED [ 45%]PASSEDPASSED [ 45%] [ 45%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_candidates_other_shapes[k256-odd-weight-tiles] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_candidates_other_shapes[k256-odd-weight-tiles] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_candidates_other_shapes[k256-odd-weight-tiles] PASSED [ 45%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_candidates_other_shapes[k256-odd-weight-tiles] PASSED [ 48%]PASSED [ 48%]PASSED [ 48%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_candidates_other_shapes[wide-hidden] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_candidates_other_shapes[wide-hidden] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_candidates_other_shapes[wide-hidden] PASSED [ 48%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_candidates_other_shapes[wide-hidden] PASSEDPASSED [ 51%] [ 51%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_candidates_other_shapes[n8-tail] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_candidates_other_shapes[n8-tail] PASSED [ 51%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_candidates_other_shapes[n8-tail] PASSED [ 51%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_tail_candidates_other_shapes[n8-tail] PASSED [ 54%]PASSED [ 54%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_offset_m_boundary[k128-partial-m-tail-pair] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_offset_m_boundary[k128-partial-m-tail-pair] PASSED [ 54%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_offset_m_boundary[k128-partial-m-tail-pair] PASSED [ 54%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_offset_m_boundary[k128-partial-m-tail-pair] PASSED [ 57%]PASSED
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_offset_m_boundary[k128-partial-m-cluster]  [ 57%]PASSED [ 57%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_offset_m_boundary[k128-partial-m-cluster] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_offset_m_boundary[k128-partial-m-cluster] PASSED [ 57%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_offset_m_boundary[k128-partial-m-cluster] PASSED [ 60%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_offset_m_boundary[k256-padded-cta] PASSED [ 60%]PASSED [ 60%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_offset_m_boundary[k256-padded-cta] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_offset_m_boundary[k256-padded-cta] PASSED [ 60%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_offset_m_boundary[k256-padded-cta] PASSED [ 63%]PASSED [ 63%]PASSED [ 63%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_local_optimizations_independent_oracle[256-tile0-False-False-cross_rank] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_local_optimizations_independent_oracle[256-tile0-False-False-cross_rank] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_local_optimizations_independent_oracle[256-tile0-False-False-cross_rank] PASSED [ 63%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_local_optimizations_independent_oracle[256-tile0-False-False-cross_rank] PASSED [ 66%]PASSED
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_local_optimizations_independent_oracle[256-tile1-True-False-sparse_owner]  [ 66%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_local_optimizations_independent_oracle[256-tile1-True-False-sparse_owner] PASSED [ 66%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_local_optimizations_independent_oracle[256-tile1-True-False-sparse_owner] PASSED [ 66%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_local_optimizations_independent_oracle[256-tile1-True-False-sparse_owner] PASSED [ 69%]PASSED [ 69%]PASSED [ 69%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_local_optimizations_independent_oracle[7168-tile2-False-False-cross_rank] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_local_optimizations_independent_oracle[7168-tile2-False-False-cross_rank] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_local_optimizations_independent_oracle[7168-tile2-False-False-cross_rank] PASSED [ 69%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_local_optimizations_independent_oracle[7168-tile2-False-False-cross_rank] PASSED [ 72%]PASSED [ 72%]PASSED [ 72%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_local_optimizations_independent_oracle[7168-tile3-False-True-cross_rank] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_local_optimizations_independent_oracle[7168-tile3-False-True-cross_rank] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_local_optimizations_independent_oracle[7168-tile3-False-True-cross_rank] PASSED [ 72%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_local_optimizations_independent_oracle[7168-tile3-False-True-cross_rank] PASSED [ 75%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_mxfp4_bulk_offsets_match_cpasync_after_repeat_and_reset[1-528] PASSED [ 75%]PASSED [ 75%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_mxfp4_bulk_offsets_match_cpasync_after_repeat_and_reset[1-528] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_mxfp4_bulk_offsets_match_cpasync_after_repeat_and_reset[1-528] PASSED [ 75%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_mxfp4_bulk_offsets_match_cpasync_after_repeat_and_reset[1-528] PASSEDPASSED [ 78%] [ 78%]PASSED [ 78%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_mxfp4_bulk_offsets_match_cpasync_after_repeat_and_reset[2-330] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_mxfp4_bulk_offsets_match_cpasync_after_repeat_and_reset[2-330] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_mxfp4_bulk_offsets_match_cpasync_after_repeat_and_reset[2-330] PASSED [ 78%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_mxfp4_bulk_offsets_match_cpasync_after_repeat_and_reset[2-330] PASSED [ 81%]PASSED [ 81%]PASSED [ 81%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_fused_outer_graph_replay_matches_oracle[tail-off] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_fused_outer_graph_replay_matches_oracle[tail-off] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_fused_outer_graph_replay_matches_oracle[tail-off] PASSED [ 81%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_fused_outer_graph_replay_matches_oracle[tail-off] PASSED [ 84%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_fused_outer_graph_replay_matches_oracle[tail-on] PASSED [ 84%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_fused_outer_graph_replay_matches_oracle[tail-on] PASSED [ 84%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_fused_outer_graph_replay_matches_oracle[tail-on] PASSED [ 84%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_moe_ep_sm90_pull_mxfp4_fused_outer_graph_replay_matches_oracle[tail-on] PASSED [ 87%]PASSED [ 87%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_fused_mxfp4_tiny_full_output[1e-15-0] PASSED [ 87%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_fused_mxfp4_tiny_full_output[1e-15-0] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_fused_mxfp4_tiny_full_output[1e-15-0] PASSED [ 87%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_fused_mxfp4_tiny_full_output[1e-15-0] PASSED [ 90%]PASSED [ 90%]PASSED [ 90%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_fused_mxfp4_tiny_full_output[1e-18-0] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_fused_mxfp4_tiny_full_output[1e-18-0] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_fused_mxfp4_tiny_full_output[1e-18-0] PASSED [ 90%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_fused_mxfp4_tiny_full_output[1e-18-0] PASSED [ 93%]PASSED [ 93%]PASSED [ 93%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_fused_mxfp4_tiny_full_output[1e-19-0] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_fused_mxfp4_tiny_full_output[1e-19-0] 
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_fused_mxfp4_tiny_full_output[1e-19-0] PASSED [ 93%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_fused_mxfp4_tiny_full_output[1e-19-0] PASSED [ 96%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_fused_mxfp4_tiny_full_output[1e-35-55] PASSED [ 96%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_fused_mxfp4_tiny_full_output[1e-35-55] PASSED [ 96%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_fused_mxfp4_tiny_full_output[1e-35-55] PASSED [ 96%]
+tests/moe_ep/test_moe_ep_sm90_pull_mxfp4_mega_multirank.py::test_fused_mxfp4_tiny_full_output[1e-35-55] PASSED [100%]PASSED [100%]PASSED [100%]PASSED [100%]
+
+=============================== warnings summary ===============================
+../source/tests/conftest.py:30
+../source/tests/conftest.py:30
+  /test/source/tests/conftest.py:30: DeprecationWarning: tcgen05.OperandMajorMode is deprecated, use cute.nvgpu.OperandMajorMode instead
+    from cutlass.cute.nvgpu.tcgen05 import OperandMajorMode
+
+flashinfer/cute_dsl/availability.py:136
+  /test/candidate-source/flashinfer/cute_dsl/availability.py:136: DeprecationWarning: Arch from arch.py is deprecated. Use Arch from enums.py instead.
+    from cutlass.base_dsl.arch import Arch
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================== 33 passed, 3 warnings in 281.36s (0:04:41) ==================
+
+
+=============================== warnings summary ===============================
+../source/tests/conftest.py:30
+../source/tests/conftest.py:30
+  /test/source/tests/conftest.py:30: DeprecationWarning: tcgen05.OperandMajorMode is deprecated, use cute.nvgpu.OperandMajorMode instead
+    from cutlass.cute.nvgpu.tcgen05 import OperandMajorMode
+
+flashinfer/cute_dsl/availability.py:136
+  /test/candidate-source/flashinfer/cute_dsl/availability.py:136: DeprecationWarning: Arch from arch.py is deprecated. Use Arch from enums.py instead.
+    from cutlass.base_dsl.arch import Arch
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================== 33 passed, 3 warnings in 281.65s (0:04:41) ==================
+
+
+
+
+=============================== warnings summary ===============================
+=============================== warnings summary ===============================
+../source/tests/conftest.py:30
+../source/tests/conftest.py:30
+  /test/source/tests/conftest.py:30: DeprecationWarning: tcgen05.OperandMajorMode is deprecated, use cute.nvgpu.OperandMajorMode instead
+    from cutlass.cute.nvgpu.tcgen05 import OperandMajorMode
+
+../source/tests/conftest.py:30
+../source/tests/conftest.py:30
+  /test/source/tests/conftest.py:30: DeprecationWarning: tcgen05.OperandMajorMode is deprecated, use cute.nvgpu.OperandMajorMode instead
+    from cutlass.cute.nvgpu.tcgen05 import OperandMajorMode
+
+flashinfer/cute_dsl/availability.py:136
+  /test/candidate-source/flashinfer/cute_dsl/availability.py:136: DeprecationWarning: Arch from arch.py is deprecated. Use Arch from enums.py instead.
+    from cutlass.base_dsl.arch import Arch
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+flashinfer/cute_dsl/availability.py:136
+  /test/candidate-source/flashinfer/cute_dsl/availability.py:136: DeprecationWarning: Arch from arch.py is deprecated. Use Arch from enums.py instead.
+    from cutlass.base_dsl.arch import Arch
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================== 33 passed, 3 warnings in 281.66s (0:04:41) ==================
+================== 33 passed, 3 warnings in 281.67s (0:04:41) ==================
+### sm90_fp8_mxfp4_bf16_pull_cutedsl mega multirank (Hopper): PASS
+
+################################################################
+### summary
+################################################################
+  PASS  sm90_fp8_mxfp4_bf16_pull_cutedsl mega multirank (Hopper)
+
+all sections passed.

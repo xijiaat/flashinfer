@@ -1,0 +1,17 @@
+{
+  "scope": "standalone existing final reducer",
+  "hidden": 5120,
+  "topk": 6,
+  "capacity": 4128,
+  "cases": [
+    {
+      "M": 16,
+      "checks": [
+        "original",
+        "changed",
+        "restored"
+      ],
+      "rounds": []
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+NEGATIVE_CONTROL_BASELINE_MODULE /test/source/flashinfer/moe_ep/kernel_src/sm90/pull_style_cutedsl_megakernel/shim/hopper_mxfp4.py
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________ test_sm90_mxfp4_kernel_matches_independent_reference[1] ____________
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7f5ce0a64800>
+active_dispatch_warps = 1
+
+    @pytest.mark.arch_hopper
+    @pytest.mark.parametrize("active_dispatch_warps", [1, 2, 4])
+    def test_sm90_mxfp4_kernel_matches_independent_reference(
+        monkeypatch, active_dispatch_warps
+    ) -> None:
+        """Raw MXFP4 ABI -> production preprocess -> fused public launch."""
+        _require_hopper()
+    
+        import torch
+    
+        from flashinfer.moe_ep import PrequantizedMoEWeights
+        from flashinfer.moe_ep.backends.mega.kernel.sm90.fp8_mxfp4_bf16_pull_cutedsl import (
+            preprocess_mega_weights,
+        )
+        from flashinfer.moe_ep.backends.mega.kernel.sm90.fp8_mxfp4_bf16_pull_cutedsl.staging import (
+            stage_mega_moe_inputs,
+        )
+    
+        # Restored by pytest: never leak the single-rank no-NVSHMEM mode to other
+        # collective tests in the process.
+        monkeypatch.setenv("MEGA_NO_DIST", "1")
+        pkg = _sm90_tree()
+        problem = _single_rank_problem()
+    
+        raw = PrequantizedMoEWeights(
+            w13=problem["w13"],
+            w2=problem["w2"],
+            w13_scale=problem["w13_scale"],
+            w2_scale=problem["w2_scale"],
+        )
+        transformed_l1, transformed_l2 = preprocess_mega_weights(
+            raw,
+            intermediate_size=problem["intermediate"],
+            hidden_size=problem["hidden"],
+        )
+    
+        symm_buffer = pkg.get_symm_buffer_for_hopper_mxfp4_mega_moe(
+            problem["experts"],
+            problem["max_tokens"],
+            problem["topk"],
+            problem["hidden"],
+            problem["intermediate"],
+            0,
+            1,
+            swap_ab=True,
+            pingpong=False,
+            mma_tiler_mnk=MMA_TILER_MNK,
+            active_dispatch_warps=active_dispatch_warps,
+            cluster_shape_mnk=(1, 1, 1),
+            gate_up_clamp=problem["gate_up_clamp"],
+        )
+        try:
+            stage_mega_moe_inputs(
+                problem["hidden_states"],
+                problem["topk_weights"],
+                problem["topk_ids"],
+                symm_buffer.x,
+                symm_buffer.x_sf,
+                symm_buffer.topk_idx,
+                symm_buffer.topk_weights,
+                quantize_input=True,
+            )
+    
+            n = problem["num_tokens"]
+            y_reference, fc2_scales = _reference_reduced(
+                problem=problem,
+                symm_buffer=symm_buffer,
+                transformed_l1=transformed_l1,
+                transformed_l2=transformed_l2,
+            )
+            assert torch.isfinite(fc2_scales).all()
+            assert (fc2_scales > 0).all()
+    
+            y_first = torch.empty(
+                (n, problem["hidden"]), dtype=torch.bfloat16, device="cuda"
+            )
+            pkg.hopper_mxfp4_mega_moe(
+                y_first,
+                transformed_l1,
+                transformed_l2,
+                symm_buffer,
+                num_tokens=n,
+                gate_up_clamp=problem["gate_up_clamp"],
+                sync=True,
+            )
+    
+            # Repeated launches and the output-view API must agree numerically.
+            y_second = torch.empty_like(y_first)
+            pkg.hopper_mxfp4_mega_moe(
+                y_second,
+                transformed_l1,
+                transformed_l2,
+                symm_buffer,
+                num_tokens=n,
+                sync=True,
+            )
+            assert torch.equal(y_second, y_first)
+    
+            # ``y=None`` returns the live-token output view.
+            output_view = pkg.hopper_mxfp4_mega_moe(
+                None,
+                transformed_l1,
+                transformed_l2,
+                symm_buffer,
+                num_tokens=n,
+                sync=True,
+            )
+            assert output_view is not None
+            assert output_view.shape == (n, problem["hidden"])
+            assert torch.equal(output_view, y_first)
+    
+            actual = y_first.to(torch.float32)
+            assert torch.isfinite(actual).all()
+            relative_l2 = (actual - y_reference).norm() / y_reference.norm().clamp_min(
+                1.0e-6
+            )
+            print(
+                "[sm90 mxfp4 independent oracle] "
+                f"rel_l2={relative_l2.item():.4g} "
+                f"max|d|={(actual - y_reference).abs().max().item():.4g} "
+                f"amax(ref)={y_reference.abs().max().item():.4g}"
+            )
+            torch.testing.assert_close(actual, y_reference, rtol=3.0e-2, atol=2.0e-2)
+            assert relative_l2.item() < 0.035
+    
+            # Shrink/grow at the same workspace address, then replay the small
+            # graph after a larger launch. Padded output rows must remain untouched.
+            saved_routes = symm_buffer.topk_idx.clone()
+            small_graph = torch.cuda.CUDAGraph()
+            for live in (1, n):
+                symm_buffer.topk_idx.copy_(saved_routes)
+                symm_buffer.topk_idx[live:].fill_(-1)
+                symm_buffer.output_activation.fill_(float("nan"))
+                result = pkg.hopper_mxfp4_mega_moe(
+                    None,
+                    transformed_l1,
+                    transformed_l2,
+                    symm_buffer,
+                    num_tokens=live,
+                    sync=True,
+                )
+                assert torch.equal(result, y_first[:live])
+>               assert symm_buffer.output_activation[live:].isnan().all()
+E               AssertionError: assert tensor(False, device='cuda:0')
+E                +  where tensor(False, device='cuda:0') = <built-in method all of Tensor object at 0x7f5c6ef3a2b0>()
+E                +    where <built-in method all of Tensor object at 0x7f5c6ef3a2b0> = tensor([[False, False, False,  ..., False, False, False],\n        [False, False, False,  ..., False, False, False],\n  ..., False, False,  ..., False, False, False],\n        [False, False, False,  ..., False, False, False]], device='cuda:0').all
+E                +      where tensor([[False, False, False,  ..., False, False, False],\n        [False, False, False,  ..., False, False, False],\n  ..., False, False,  ..., False, False, False],\n        [False, False, False,  ..., False, False, False]], device='cuda:0') = <built-in method isnan of Tensor object at 0x7f5c6e852030>()
+E                +        where <built-in method isnan of Tensor object at 0x7f5c6e852030> = tensor([[0., 0., 0.,  ..., 0., 0., 0.],\n        [0., 0., 0.,  ..., 0., 0., 0.],\n        [0., 0., 0.,  ..., 0., 0., 0.]...        [0., 0., 0.,  ..., 0., 0., 0.],\n        [0., 0., 0.,  ..., 0., 0., 0.]], device='cuda:0', dtype=torch.bfloat16).isnan
+
+../candidate-source/tests/moe_ep/test_sm90_pull_mxfp4_kernel_vs_reference.py:522: AssertionError
+----------------------------- Captured stdout call -----------------------------
+ninja: Entering directory `/test/jit/.cache/flashinfer/0.7.2/90a/cached_ops/fused_moe_90_h20_prebuilt_d'
+ninja: no work to do.
+[sm90 mxfp4 independent oracle] rel_l2=0.002193 max|d|=2.48e-05 amax(ref)=0.01064
+=============================== warnings summary ===============================
+tests/conftest.py:30
+tests/conftest.py:30
+  /test/source/tests/conftest.py:30: DeprecationWarning: tcgen05.OperandMajorMode is deprecated, use cute.nvgpu.OperandMajorMode instead
+    from cutlass.cute.nvgpu.tcgen05 import OperandMajorMode
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED ../candidate-source/tests/moe_ep/test_sm90_pull_mxfp4_kernel_vs_reference.py::test_sm90_mxfp4_kernel_matches_independent_reference[1]
+1 failed, 2 warnings in 6.11s
